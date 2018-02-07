@@ -1,0 +1,17 @@
+ 
+<h2> Login </h2>
+<% if @error %>
+  <p style="color:red"><%= @error %></p>
+<% end %>
+  <div class="container">
+  <form action="/login" method="post">
+  <label for="username">Username:</label>
+    <input type="text" name="username" value="" placeholder="">
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="text" name="password" value="" placeholder="">
+    <br>
+
+    <input type="submit" value="Login">
+  </form>

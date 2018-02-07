@@ -1,0 +1,26 @@
+
+<h1> <%= @user.username %> </h1>
+
+
+<% @rounds.each do |k| %>
+
+	<h2><%= k.deck.name %></h2>
+	<table width=75%>
+	<th style="background-color: #dddddd">
+		Date:</th>
+	<tr><%= k.created_at %></tr>
+		<th style="background-color: #dddddd">
+		Cards in deck:</th>
+	<tr><%= k.deck.cards.count %></tr>
+		<th style="background-color: #dddddd">
+		First guess correct:</th>
+	<tr><%= k.first_correct %></tr>
+		<th style="background-color: #dddddd">
+		Total guesses:</th>
+	<tr><%= k.total_guesses %></tr>
+	</table>
+
+<% end %>
+
+<h4> <%= session[:user_id] %> </h4>
+

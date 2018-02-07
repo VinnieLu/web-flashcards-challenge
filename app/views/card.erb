@@ -1,0 +1,12 @@
+
+<h2> <%= session[:deck].name %> Trivia</h2><br>
+<h1> <%= session[:shuffled][session[:counter]].question %> </h1><br>
+
+  <div class="container">
+  <form action="/deck/<%=params[:deck_id]%>/card/<%=params[:card_id]%>" method="post">
+  <label for="guess">Enter your guess:</label><br>
+    <input type="text" name="guess"><br>
+    <input type="submit" value="Submit your guess">
+  </form>
+  </div>
+    <p> Hello World </p>

@@ -1,0 +1,10 @@
+<!--  <h6>Hi! this is the index.</h6> -->
+<div class="container">
+  
+
+    <% @decks.each do |deck| %>
+      <h3><a href="/decks/<%=deck.id%>"><%= deck.name %></a></h3>
+    <% end %>
+
+    <!-- <h4><a href="/articles/new">Post Something NOW</a></h4> -->
+</div>

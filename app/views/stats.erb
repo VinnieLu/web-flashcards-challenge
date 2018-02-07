@@ -1,0 +1,6 @@
+
+<h2><%= @round.deck.name %></h2>
+
+<br>
+
+<h3>You've completed a round of <%= @round.deck.name %>. You answered <%= @round.first_correct %> / <%= @round.deck.cards.count %> cards correctly on the first try. You submitted <%= @round.total_guesses %> total guesses before each card was answered correctly.</h3>
